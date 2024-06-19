@@ -4,7 +4,8 @@ import Queue from 'bull';
 import dbClient from '../utils/db';
 import userUtils from '../utils/user';
 
-const userQueue = new Queue('userQueue');
+const user = require('../utils/user');
+
 
 class UsersController {
   /**
